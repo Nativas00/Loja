@@ -12,7 +12,6 @@ class Produto:
             return True
         return False
 
-
 class Carrinho:
     def __init__(self):
         self.itens = {}
@@ -32,7 +31,6 @@ class Carrinho:
 
     def calcular_total(self):
         return sum(item["produto"].preco * item["quantidade"] for item in self.itens.values())
-
 
 class Loja:
     def __init__(self):
